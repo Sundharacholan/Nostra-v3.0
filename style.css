@@ -522,7 +522,7 @@
     color: blue;
 }
 
-/* new letter */
+/* news letter */
 .News-Letter {
     margin: 50px 0px 20px 0px;
     text-align: center;
@@ -1078,6 +1078,7 @@
 
     .s5__container2-op h5 {
         font-size: 8px;
+        width: 60px;
         color: rgb(32, 37, 46);
     }
 
@@ -1107,14 +1108,20 @@
     }
 
     .new-arrival__container {
-        width: 98%;;
+        width: 98%;
         padding: 0px 0px 0px 5px;
         /* border: 1px solid black; */
         display: flex;
         justify-content: space-between;
         gap: 10px;
         margin: 0px 0px;
+        overflow: scroll;
         height: fit-content;
+    }
+
+    .new-arrival__container::-webkit-scrollbar {
+        display: none;
+        scroll-behavior: smooth;
     }
 
     .nac-img {
