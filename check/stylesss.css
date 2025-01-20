@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+/* Checkbox container styling */
+div {
+    text-align: center;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 18px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Shirt gallery container */
+#shirt-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual shirt image styling */
+.dc-inside {
+    width: 120px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Images hidden by default */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for shirt images */
+.dc-inside:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .dc-inside {
+        width: 90px;
+        height: 120px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}

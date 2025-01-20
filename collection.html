@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-s1s2">
+        <!-- ad -->
+        <div class="s1">
+            <p>Sign Up and <b>GET 20% OFF</b> for your first Order </p>
+            <svg onclick="delItem(event)" id="ad_cancel" xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
+        <!-- header -->
+        <div class="s2">
+            <h1 style="font-size:xx-large;">Nostra</h1>
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#rgb(29, 35, 44)">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+            <div class="s2__menu">
+                <ul class="s2__menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">New Arrival</a></li>
+                    <li><a href="index.html">Most Wanted</a></li>
+                    <li><a href="./collection.html">Collections</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- sidenav -->
+    <div class="side-navbar-con">
+        <img class="sn-mq-cancel" src="./image/close.png" alt="">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New Arrival</a></li>
+            <li><a href="index.html">Most Wanted</a></li>
+            <li><a href="./collection.html">Collections</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="sn-overlay"></div>
+
+    <!-- checkbox -->
+    <div class="collection-con">
+        <div class="cln-s1">
+            <h1>Occasion</h1>
+            <div class="cln-ck">
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="summer"> Summer <br>
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="party"> Party <br>
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="beach"> Beach
+            </div>
+            <h1>Colors</h1>
+            <div class="cln-ck">
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="white"> White <br>
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="green"> Green <br>
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="blue"> Blue
+            </div>
+            <h1>Arrivals</h1>
+            <div class="cln-ck">
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="new"> New <br>
+                <input type="checkbox" name="color" onclick="changeShirtColor()" id="old"> Old
+            </div>
+        </div>
+        <hr style="color: rgb(32, 37, 46); border: 2px solid rgb(32, 37, 46) ">
+
+        <div class="cln-s2">
+            <div class="cln-scr">
+                <input type="text" placeholder="Search" id="searchBox">
+                <img src="./image/search.png" alt="">
+            </div>
+            <div class="dc-scroll">
+                <!-- dress-container1 -->
+                <div class="dress-container1">
+                    <div id="shirt-white1" class="dc-inside">
+                        <img src="./products/f4.jpg" alt="">
+                        <p class="product-name">Printed Shirt<br>(White)</p>
+                        <p>$56</p>
+                    </div>
+                    <div id="shirt-beach1-" class="dc-inside">
+                        <img src="./products/f6.jpg" alt="">
+                        <p class="product-name">Beach Shirt</p>
+                        <p>$66</p>
+                    </div>
+                    <div id="shirt-summer1" class="dc-inside">
+                        <img src="./products/f1.jpg" alt="">
+                        <p class="product-name">Printed Shirt</p>
+                        <p>$42</p>
+                    </div>
+                </div>
+                <!-- dress-container2 -->
+                <div class="dress-container2">
+                    <div id="shirt-party1" class="dc-inside">
+                        <img src="./products/f5.jpg" alt="">
+                        <p id="mq"  class="product-name">Party Shirt<br>(Red)</p>
+                        <p>$80</p>
+                    </div>
+                    <div id="shirt-old1" class="dc-inside">
+                        <img src="./products/n7.jpg" alt="">
+                        <p id="mq"  class="product-name">Casual Shirt</p>
+                        <p>$43</p>
+                    </div>
+                    <div id="shirt-beach1" class="dc-inside">
+                        <img src="./products/f3.jpg" alt="">
+                        <p id="mq"  class="product-name">Printed Shirt</p>
+                        <p>$59</p>
+                    </div>
+                </div>
+                <!-- dress-container3 -->
+                <div class="dress-container3">
+                    <div id="shirt-blue1" class="dc-inside">
+                        <img class="opacity" src="./image/b5_files/ts1.webp" alt="">
+                        <p id="mq"  class="product-name">Blue t-shirt</p>
+                        <p>$47</p>
+                    </div>
+                    <div id="shirt-green1" class="dc-inside">
+                        <img class="opacity" src="./image/b5_files/ts2.webp" alt="">
+                        <p id="mq"  class="product-name">Green t-shirt</p>
+                        <p>$39</p>
+                    </div>
+                    <div id="shirt-new1" class="dc-inside">
+                        <img class="opacity" src="./image/b5_files/ts3.webp" alt="">
+                        <p  id="mq" class="product-name">Black t-shirt</p>
+                        <p>$25</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="News-Letter">
+        <h1>Join our News Letter</h1>
+        <p class="nl2">Signup for Our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text">
+        <p class="nl4">Subscribe</p>
+    </div>
+
+    <!-- about-us -->
+    <div class="about-us">
+        <div class="auc">
+            <h1>Nostra</h1>
+            <p>Shopping online offers many benefits, such as taking your time to find exactly what you want and easily
+                comparing prices. With Nostra, you can shop for anything at the lowest prices, including cool gifts for
+                friends and family.</p>
+            <div class="au-img">
+                <img class="au-img1" src="./image/instagram-white-icon.png" alt="">
+                <img class="au-img2" src="./image/twitter-icon.png" alt="">
+                <img class="au-img3" src="./image/facebook-app-round-white-icon.png" alt="">
+            </div>
+            <p class="au-name">@Chozhan_Nostra.com</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    // ad cancel
+    var main = document.querySelector("s1")
+    var cancel = document.getElementById("ad_cancel")
+    function delItem(event) {
+        cancel.parentElement.remove()
+    }
+
+    // side nav
+    var menu = document.getElementById("menu")
+    var sideNavCon = document.querySelector(".side-navbar-con")
+    var cancelSN = document.querySelector(".sn-mq-cancel")
+    var overlay = document.querySelector(".sn-overlay")
+
+    menu.addEventListener("click", function () {
+        sideNavCon.style.marginLeft = "0"
+        overlay.style.marginLeft = "0"
+    })
+    cancelSN.addEventListener("click", function () {
+        sideNavCon.style.marginLeft = "-80%"
+        overlay.style.marginLeft = "-100%"
+    })
+
+    // search-fun
+    var searchBox = document.getElementById("searchBox")
+    var dressContainer = document.querySelector(".cln-s2")
+    var dressCard = dressContainer.querySelectorAll(".dc-inside")
+
+    searchBox.addEventListener("keyup", function () {
+        var enteredValue = event.target.value.toUpperCase()
+
+        for (count = 0; count < dressCard.length; count = count + 1) {
+            var productName = dressCard[count].querySelector(".product-name")
+
+            if (productName.textContent.toUpperCase().indexOf(enteredValue) < 0) {
+                dressCard[count].style.display = "none"
+            }
+            else {
+                dressCard[count].style.display = "block"
+            }
+        }
+    })
+
+
+    // check-fun 
+    function changeShirtColor() {
+            // Get all checkboxes
+            let checkboxes = document.querySelectorAll('input[name="color"]');
+            let anyChecked = false; // Flag to track if any checkbox is checked
+
+            // Check if at least one checkbox is checked
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    anyChecked = true;
+                }
+            });
+
+            // If no checkboxes are checked, display all images inline
+            if (!anyChecked)
+            {
+                document.querySelectorAll('.dc-inside').forEach(function(image){
+                    image.style.display = 'inline-block';
+                });
+            } 
+            else
+            {
+                // Hide all images by default
+                document.querySelectorAll('.dc-inside').forEach(function(image) {
+                    image.style.display = 'none';
+                });
+
+                // Show the images for checked checkboxes
+                checkboxes.forEach(function(checkbox){
+                    if (checkbox.checked)
+                    {
+                        let color = checkbox.id; // Get the color from the checkbox ID
+                        // Show up to N images for the checked color
+                        for (let i = 1; i <= 8; i++)
+                        {
+                            let shirtImage = document.getElementById('shirt-' + color + i);
+                            if (shirtImage)
+                            {
+                                shirtImage.style.display = 'inline'; // Show the selected images
+                            }
+                        }
+                    }
+                });
+
+
+            }
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // checkbox fun
+//     function filterImages() {
+//     const colors = ['summer', 'party', 'beach', 'white', 'red', 'green', 'blue', 'orange', 'New', 'old'];
+  
+//     const allImages = document.querySelectorAll('.dc-inside');
+//     if(colors.checked)
+//     {
+//         allImages.forEach(img =>{
+//         img.style.display = 'none';
+    
+//         colors.forEach(colors => {
+//         const checkbox = document.getElementById(colors).checked;
+//                 if (checkbox && img.classList.contains(colors))
+//                 {
+//                     img.style.display ='block';
+//                 }
+//             });
+//         });
+//     }
+//     else{
+//         img.style.display = 'inline';
+//     }
+  
+    
+// }
+
+// document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+//   checkbox.addEventListener('change', filterImages);
+// });
+
+
+
+
+
+    // CheckBox
+    // function checkImg(){
+    //     const summer = document.getElementById("summer")
+    //     const party = document.getElementById("party")
+    //     const beach = document.getElementById("beach")
+    //     const white = document.getElementById("white")
+    //     const red = document.getElementById("red")
+    //     const green = document.getElementById("green")
+    //     const blue = document.getElementById("blue")
+    //     const New = document.getElementById("new")
+    //     const old = document.getElementById("old")
+
+
+    //     const allImages = document.querySelectorAll(".dc-inside");
+    //     allImages.forEach(data =>{
+    //         if(summer.checked){
+    //             data.style.display="none"
+    //             if(data.classList.contains("summer"))
+    //             {
+    //                 data.style.display="block"
+    //             }
+    //         }
+    //         else{
+    //             data.style.display="inline"
+    //         }
+                        
+    //     })
+
+    // }
+
+</script>

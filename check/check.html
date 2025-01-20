@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt Color Selector</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <style>
+        .dc-inside {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Shirt Colors</h1>
+    
+    <!-- Checkboxes -->
+    <div>
+        <label>
+            <input type="checkbox" name="color" id="red" onchange="changeShirtColor()"> Red
+        </label>
+        <label>
+            <input type="checkbox" name="color" id="blue" onchange="changeShirtColor()"> Blue
+        </label>
+        <label>
+            <input type="checkbox" name="color" id="green" onchange="changeShirtColor()"> Green
+        </label>
+    </div>
+
+    <!-- Shirt Images -->
+    <div id="shirt-gallery">
+        <!-- Red Shirts -->
+        <img src="red1.jpg" id="shirt-red1" class="dc-inside" alt="Red Shirt 1">
+        <img src="red2.jpg" id="shirt-red2" class="dc-inside" alt="Red Shirt 2">
+        <img src="red3.jpg" id="shirt-red3" class="dc-inside" alt="Red Shirt 3">
+        <img src="red4.jpg" id="shirt-red4" class="dc-inside" alt="Red Shirt 4">
+        <img src="red5.jpg" id="shirt-red5" class="dc-inside" alt="Red Shirt 5">
+
+        <!-- Blue Shirts -->
+        <img src="blue1.jpg" id="shirt-blue1" class="dc-inside" alt="Blue Shirt 1">
+        <img src="blue2.jpg" id="shirt-blue2" class="dc-inside" alt="Blue Shirt 2">
+        <img src="blue3.jpg" id="shirt-blue3" class="dc-inside" alt="Blue Shirt 3">
+        <img src="blue4.jpg" id="shirt-blue4" class="dc-inside" alt="Blue Shirt 4">
+        <img src="blue5.jpg" id="shirt-blue5" class="dc-inside" alt="Blue Shirt 5">
+
+        <!-- Green Shirts -->
+        <img src="green1.jpg" id="shirt-green1" class="dc-inside" alt="Green Shirt 1">
+        <img src="green2.jpg" id="shirt-green2" class="dc-inside" alt="Green Shirt 2">
+        <img src="green3.jpg" id="shirt-green3" class="dc-inside" alt="Green Shirt 3">
+        <img src="green4.jpg" id="shirt-green4" class="dc-inside" alt="Green Shirt 4">
+        <img src="green5.jpg" id="shirt-green5" class="dc-inside" alt="Green Shirt 5">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
